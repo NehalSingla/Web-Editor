@@ -4,23 +4,25 @@
     min-height:150px;
 
 }
+
+#mainFlex
+{
+    display: flex;
+}
+
+#divieId{
+    flex: 1;
+}
+
 #html,#css,#js{
-    width:50%;
-     min-height:250px;
-    padding:15px;
+    width: 100%;
+    min-height:250px;
     overflow:scroll;
     background-color:black;
     color:white;
 }
 iframe{
-    float:right;
-    position:absolute;
-    left:52%;
-    right:0;
-    top: 17%;
-    bottom:0;
-    width:45%;
-    height:auto;
+    flex: 1;
     min-height:850px;
     
 }
