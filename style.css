@@ -1,0 +1,26 @@
+#QuestionBox,#Question
+{
+    width:100%;
+    min-height:150px;
+
+}
+#html,#css,#js{
+    width:50%;
+     min-height:250px;
+    padding:15px;
+    overflow:scroll;
+    background-color:black;
+    color:white;
+}
+iframe{
+    float:right;
+    position:absolute;
+    left:52%;
+    right:0;
+    top: 17%;
+    bottom:0;
+    width:45%;
+    height:auto;
+    min-height:850px;
+    
+}
