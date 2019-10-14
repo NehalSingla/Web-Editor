@@ -24,5 +24,13 @@
 iframe{
     flex: 1;
     min-height:750px;
+    background-color: pink;
     
+}
+#smt_btn
+{
+    margin-bottom: 10px;
+    float:right;
+    margin-top: 5px;
+    margin-right:10px;
 }
