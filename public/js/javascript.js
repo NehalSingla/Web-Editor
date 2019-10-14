@@ -30,6 +30,17 @@ function compile() {
       alert("Html fields are empty");
       return;
     }
+    var obj=new Object();
+    obj.htmlData=code;
+    console.log(obj);
 
-
+    var request=new XMLHttpRequest();
+    request.open('POST',"/submitCode");
+    request.setRequestHeader("Content-Type","application/json");
+    request.send(JSON.stringify(obj))
+    request.addEventListener("load",function()
+    {
+      console.log("successful");
+      alert("data submit");
+    });
   }
