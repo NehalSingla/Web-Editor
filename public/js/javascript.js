@@ -22,17 +22,19 @@ function compile() {
   
   compile();
 
+  var obj=new Object();
+
   function submit_data()
   {
-    console.log(code);
+  	//console.log(document.getElementById("code").contentWindow.document.body);
     if(html.value=='')
     {
       alert("Html fields are empty");
       return;
     }
-    var obj=new Object();
-    obj.htmlData=code;
-    console.log(obj);
+    
+    obj.htmlData=document.getElementById("code").contentWindow.document.body.outerHTML;
+    console.log(obj.htmlData);
 
     var request=new XMLHttpRequest();
     request.open('POST',"/submitCode");
